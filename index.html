@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de nuevos empleos</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    #primeraPagina{
+        background: url(img/NoPath.png);
+        background-size: cover;
+    }
+    section{
+        height: 100vh;
+        width: 100%;
+    }
+  h1{
+      margin-left: 10px;
+      margin-top: 45px;
+  }
+    h1, nav{
+        display: inline-block;
+        vertical-align: top;
+        /* border: 1px solid red; */
+        color: white;
+    }
+    nav{
+        margin-left: 400px;
+        padding-top: 5px;
+        margin-bottom: 40px;
+    }
+    nav a{
+        margin-left: 30px;
+        margin-right: 30px;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    #primeraPagina{
+        background-color: aqua;
+    }
+    #centro{
+        padding-top: 100px ;
+    }
+    .centroI, .centroD{
+        display: inline-block;
+        vertical-align: top;
+        /* border: 1px solid white; */
+    }
+    .centroI{
+        width: 65%;
+    }
+    .centroD{
+        /* padding-top: 100px ; */
+        width: 30%;
+        height: 400px;
+    }
+    #flecha{
+        text-align: center;
+    }
+    #flecha img{
+        height: 32px;
+        margin-top: 30px;
+        
+    }
+    #parrafo1{
+        padding-bottom: 30px;
+        font-size: 23px;
+        color: white;
+    }
+    #parrafo2{
+        padding-top: 10px;
+        font-size: 23px;
+        color: white;
+    }
+    .boton{
+        margin-top: 30px;
+        text-align: center;
+        width: 80%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 28px;
+        color: white;
+        background-color: blue;
+        text-decoration: none;
+        border-radius: 10px;
+        margin-left: 60px;
+    }
+    .boton2{
+        margin-top: 10px;
+        text-align: center;
+        width: 45%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 18px;
+        color: white;
+        background-color: red;
+        margin-left: 190px;
+    }
+    #tiktok{
+        background-color: grey;
+        color: white;
+    }
+    h2{
+        text-align: center;
+        padding-top: 20px;
+    }
+    #contenedortiktok{
+        height: 700px;
+        width: 100%;
+        /* border: 1px solid blue; */
+    }
+    #tt1{
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+        height: 500px;
+        /* border: 1px solid blue; */
+        margin-top: 50px;
+    }
+    #cajadertt{
+        display: inline-block;
+        vertical-align: top;
+        width: 40%;
+        height: 400px;
+        /* border: 1px solid blue; */
+        margin-top: 50px;
+        margin-left: 200px;
+    }
+    #tt2{
+        width: 90%;
+        height: 220px;
+        /* border: 1px solid blue; */
+        margin-left: 20px;
+    }
+    #tt3{
+        width: 90%;
+        height: 220px;
+        /* border: 1px solid blue; */
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+    #tt1 img{
+        width: 100%;
+        height: 100%;
+        margin-left: 40px;
+    }
+    #tt2 img{
+        width: 100%;
+        height: 100%;
+    }
+    #tt3 img{
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid black; */
+    }
+    #flechatiktok{
+        margin-left: 90%;
+        padding-bottom: 30px;
+        /* text-align: right;
+        margin-right: 20px;
+        margin-top: 10px; */
+        /* border: 1px solid black; */
+    }
+    #flechatiktok img{
+        vertical-align: top;
+        margin-top: 20px;
+
+        
+    }
+    #video{
+        width: 100%;
+        height: 100vh;
+        background-color:rgb(240, 81, 81);
+        color: white;
+    }
+    #contenedorvideo{
+        margin-top: 20px;
+        width: 100%;
+        height: 650px;
+        /* border: 1px solid blue; */
+    }
+    #fila1{
+        width: 90%;
+        height: 250px;
+        /* border: 1px solid blue; */
+        margin-left: 60px;
+        /* margin-top: 30px; */
+    }
+    #fila2{
+        width: 90%;
+        height: 250px;
+        /* border: 1px solid blue; */
+        margin-left: 60px;
+        /* margin-top: 30px; */
+    }
+    .foto{
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 30px;
+        margin-right: 5px;
+        width: 225px;
+        height: 225px;
+    }
+    #flechavideo{
+        
+        margin-left: 90%;
+        padding-bottom: 30px;
+        /* text-align: right;
+        margin-right: 20px;
+        margin-top: 10px; */
+        /* border: 1px solid black; */
+    }
+    #flechavideo img{
+
+        vertical-align: top;
+        margin-top: 20px;
+
+        
+    }
+    #instagram{
+        width: 100%;
+        height: 100vh;
+        background-color: lightslategrey;
+    }
+   .titulo{
+        text-align: center;
+        color: white;
+      font-size: 30px;
+      padding-top: 30px;
+    }
+    .caja{
+        background-color: rgba(59, 59, 59, 0.699);
+        margin-top: 100px;
+        margin-left: 65px;
+        /* border: 1px solid blue; */
+        display: inline-block;
+        vertical-align: top;
+        width: 225px;
+        height: 400px;
+        text-align: center;
+    }
+    .caja img{
+        width: 100%;
+        height: 70%;
+        padding-bottom: 20px;
+       
+    }
+    .caja b{
+        color: white;
+        font-size: 22px;
+       padding-top: 10px;
+    }
+    #flechaig{
+        margin-left: 90%;
+        padding-bottom: 30px;
+        /* text-align: right;
+        margin-right: 20px;
+        margin-top: 10px; */
+        /* border: 1px solid black; */
+    }
+    #flechaig img{
+        vertical-align: top;
+        margin-top: 20px;
+
+    }
+</style>
+<body>
+
+    <section id="primeraPagina">
+        <header>
+            <h1>Taller de Nuevas Tendencias y Empleos</h1>
+        <nav>
+            <a href="#tiktok">Tik Tok</a>
+            <a href="#video">Video Marketing</a>
+            <a href="#instagram">Instagram</a>
+        </nav>
+        </header>
+
+        <div id="centro">
+            <div class="centroI">
+            </div>
+
+            <div class="centroD">
+                <p id="parrafo1">¿Has pensado en qué tipo de trabajo ejercerás en el futuro?¿Y cómo lo vas a desarrollar?
+                </p>
+                <p id="parrafo2">¿Sabías que la mayoría de los trabajos que realizaremos en 10 años, aún no se han desarrollado?</p>
+                <a href="#" ><p class="boton">Apúntate es Gratis</p></a>
+                
+              <p class="boton2">Solo hasta el día 20</p>  
+            </div>
+            
+        </div>
+        <div id="flecha"> 
+            <img src="img/flecha.png" alt="">
+        </div>
+    </section>
+
+    <section id="tiktok">
+        <header>
+            <h2>Tik Tok</h2>
+        </header>
+
+        <div id="contenedortiktok">
+            <div id="tt1">
+                <img src="img/tiktok1.png" alt="">
+            </div>
+
+            <div id="cajadertt">
+                <div id="tt2">
+                    <img src="img/tiktok2.png" alt="">
+                </div>
+                <div id="tt3">
+                    <img src="img/tiktok3.png" alt="">
+                </div>
+            </div>
+       
+
+            <a href="index.html" id="flechatiktok">
+                <img src="img/flechaup.png" alt="">
+            </a>
+        </div>
+    </section>
+
+<section id="video">
+    <header>
+        <h2>Video Marketing</h2>
+    </header>
+     
+    <div id="contenedorvideo">
+        <div id="fila1">
+            <div class="foto">
+                <img class="foto" src="img/ordenador.png" alt="">
+            </div>
+            <div class="foto">
+                <img class="foto" src="img/luz.png" alt="">
+            </div>
+            <div class="foto">
+                <img class="foto" src="img/movil.png" alt="">
+            </div>
+            <div class="foto">
+                <img class="foto" src="img/manos.png" alt="">
+            </div>
+        </div>
+        <div id="fila2">
+            <div class="foto">
+                <img class="foto" src="img/chica.png" alt="">
+            </div>
+            <div class="foto">
+                <img class="foto" src="img/foto.png" alt="">
+            </div>
+            <div class="foto">
+                <img class="foto" src="img/chica2.png" alt="">
+            </div>
+            <div class="foto">
+                <img class="foto" src="img/chico.png" alt="">
+            </div>
+        </div>
+        
+        <a href="index.html" id="flechavideo">
+            <img src="img/flechaup.png" alt="">
+        </a>
+    </div>
+    
+</section>
+
+<section id="instagram">
+    <header class="titulo">
+        <b>Instagram</b>
+    </header>
+<div class="contenedorig">
+    <div class="caja">
+        <img src="img/ig2.png" alt="">
+        <b>Anuncios</b>
+    </div>
+    <div class="caja">
+        <img src="img/ig3.png" alt="">
+        <b>Video Cursos</b>
+    </div>
+    <div class="caja">
+        <img src="img/ig4.png" alt="">
+        <b>Influencer</b>
+    </div>
+    <div class="caja">
+        <img src="img/ig1.png" alt="">
+        <b>Marketing</b>
+    </div>
+
+    <a href="index.html" id="flechaig">
+        <img src="img/flechaup.png" alt="">
+    </a>
+
+
+</div>
+
+
+
+
+
+</section>
+  
+</body>
+</html>
